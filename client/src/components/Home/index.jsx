@@ -17,7 +17,7 @@ class Home extends React.Component {
     const { onLoad } = this.props;
 
     axios('http://localhost:8000/api/articles')
-      .then((res) => onLoad(res.data));
+      .then((res) => {onLoad({articles: res.data})});
   }
 
   handleDelete(id) {

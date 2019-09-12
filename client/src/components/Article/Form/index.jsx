@@ -36,7 +36,7 @@ class Form extends React.Component {
         body,
         author,
       })
-        .then((res) => onSubmit(res.data))
+        .then((res) => onSubmit({article : res.data}))
         .then(() => this.setState({ title: '', body: '', author: '' }));
     } else {
       return axios.patch(`http://localhost:8000/api/articles/${articleToEdit._id}`, {
@@ -44,7 +44,7 @@ class Form extends React.Component {
         body,
         author,
       })
-        .then((res) => onEdit(res.data))
+        .then((res) => onEdit({article : res.data}))
         .then(() => this.setState({ title: '', body: '', author: '' }));
     }
   }
