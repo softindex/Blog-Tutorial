@@ -28,6 +28,7 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 import static java.util.Comparator.reverseOrder;
 import static java.util.concurrent.Executors.newCachedThreadPool;
 
+//[START EXAMPLE]
 public class BlogLauncher extends HttpServerLauncher {
 	@Provides
 	@Named("app")
@@ -109,3 +110,4 @@ public class BlogLauncher extends HttpServerLauncher {
 		launcher.launch(args);
 	}
 }
+//[END EXAMPLE]

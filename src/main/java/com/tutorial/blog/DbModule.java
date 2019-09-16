@@ -17,6 +17,7 @@ import org.bson.codecs.pojo.PojoCodecProvider;
 import static org.bson.codecs.configuration.CodecRegistries.fromProviders;
 import static org.bson.codecs.configuration.CodecRegistries.fromRegistries;
 
+//[START EXAMPLE]
 public class DbModule extends AbstractModule {
 
 	@Provides
@@ -54,3 +55,4 @@ public class DbModule extends AbstractModule {
 		return new ArticleSchemaDaoDb(collection);
 	}
 }
+//[END EXAMPLE]

@@ -7,6 +7,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.Date;
 import java.util.List;
 
+//[START EXAMPLE]
 public interface ArticleSchemaDao {
 	ArticleSchema save(ArticleSchema articleSchema);
 
@@ -115,3 +116,4 @@ public interface ArticleSchemaDao {
 		}
 	}
 }
+//[END EXAMPLE]

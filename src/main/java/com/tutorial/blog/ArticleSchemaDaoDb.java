@@ -10,6 +10,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.function.Consumer;
 
+//[START EXAMPLE]
 public class ArticleSchemaDaoDb implements ArticleSchemaDao {
 	private final MongoCollection<ArticleSchema> collection;
 
@@ -53,3 +54,4 @@ public class ArticleSchemaDaoDb implements ArticleSchemaDao {
 		return findById(id);
 	}
 }
+//[END EXAMPLE]

@@ -8,6 +8,7 @@ import java.util.Date;
 
 import static io.datakernel.codec.StructuredCodecs.*;
 
+//[START EXAMPLE]
 @SuppressWarnings("WeakerAccess")
 public final class ArticleCodecs {
 	public static final StructuredCodec<ArticleSchema> ARTICLE_CODEC = object(ArticleSchema::new,
@@ -25,3 +26,4 @@ public final class ArticleCodecs {
 			"updatedAt", ArticleSchema::getUpdatedAt, DATE_CODEC)
 			.transform(value -> value.setTitle("article"), articleSchema -> articleSchema);
 }
+//[END EXAMPLE]
